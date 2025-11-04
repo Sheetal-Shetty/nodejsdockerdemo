@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: sreedocker123/nodejsdockerdemo:latest 
+        image: sheetalsshetty/nodejsdockerdemo:latest 
         ports:
         - containerPort: 8080
