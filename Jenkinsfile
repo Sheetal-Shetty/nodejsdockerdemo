@@ -59,7 +59,7 @@ pipeline {
         stage('Create Container'){
             steps {
                 script {
-                    sh "docker run --name jenkinsfile -it -d -p 69:3000 ${DOCKER_IMAGE}:${BUILD_NUMBER}"
+                    sh "docker run --name jenkinsfile -it -d -p 3069:3000 ${DOCKER_IMAGE}:${BUILD_NUMBER}"
                 }
             }
         }
