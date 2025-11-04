@@ -49,6 +49,13 @@ pipeline {
             }
         }
 
+        stage('Remove Container'){
+            steps {
+                script {
+                    sh "docker rm -f jenkinsfile || true"
+                }
+            }
+        }
         stage('Create Container'){
             steps {
                 script {
