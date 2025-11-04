@@ -8,7 +8,7 @@ spec:
   type: NodePort
   ports:
     - port: 3067
-      targetPort: 3000
+      targetPort: 3067
       protocol: TCP
   selector:
     app: node-app
